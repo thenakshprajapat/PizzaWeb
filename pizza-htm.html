@@ -3,43 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CodeCrust</title>
     <style>
-
-        
-
+        body {
+            background: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            background: #fff6ed;
+            width: 100vw;
+            min-height: 100vh;
+            margin: 0;
+            box-shadow: none;
+            padding-bottom: 0;
+        }
+        header {
+            background: #ff9800;
+            color: #fff;
+            padding: 18px 32px 12px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0;
+        }
+        .site-title {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 0.98em;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            text-align: left;
+            padding: 32px 32px 0 32px;
+        }
+        .main-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 6px;
+        }
+        .subtitle {
+            font-size: 0.98em;
+            color: #444;
+            margin-bottom: 18px;
+        }
+        .pizza-img {
+            width: 320px;
+            border-radius: 0;
+            box-shadow: none;
+            display: block;
+            margin-top: 18px;
+        }
+        .testimonials {
+            background: #ffe9c6;
+            margin: 32px 0 0 0;
+            padding: 16px 32px;
+            border-radius: 0;
+            font-size: 0.97em;
+            text-align: left;
+        }
+        .testimonials b {
+            font-weight: bold;
+        }
+        footer {
+            background: #ffe0b2;
+            color: #444;
+            text-align: center;
+            font-size: 0.95em;
+            padding: 10px 0;
+            margin: 32px 0 0 0;
+            border-radius: 0;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pizza-img{
+            border-radius: 12px;
+        }
     </style>
 </head>
 <body>
-    <div class = "main_body">
-        <div class = "header">
-            <header>
-    <h1>CodeCrust</h1>
-    <nav>
-        <a href="#menu">Menu</a>
-        <a href="#testimonials">Reviews</a>
-        </nav>
-            </header>   
+    <div class="container">
+        <header>
+            <span class="site-title">CodeCrust</span>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <div class="main-title">Pizza meets Code</div>
+            <div class="subtitle">We build pizzas with the precision of a pull request.</div>
+            <img class="pizza-img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Pizza">
+        </main>
+        <div class="testimonials">
+            <b>What people are saying:</b>
+            <ul>
+                <li>"The best tech-stack crust ever!" – DevBites</li>
+                <li>"5 stars for layout and flavor!" – CSSWeekly</li>
+            </ul>
         </div>
-        <div>
-            <img src="cheesy-slice.png" alt="A slice of cheesy pepperoni pizza" />
-        </div>
-        <div>
-            <a href="#order" class="btn">Order Now</a>
-            <button>Send Feedback</button>
-        </div>
-        <div>
-            <form>
-                <input type="email" placeholder="Your email" required />
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-        <div>
-            <h1>CodeCrust</h1>
-            <h2>Our Top Pizzas</h2>
-            <h3>Best Seller: Binary Margherita</h3>
-        </div>
+        <footer>
+            &copy; 2025 CodeCrust. Built by Kalvians.
+        </footer>
     </div>
-     
 </body>
 </html>
